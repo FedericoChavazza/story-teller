@@ -1,0 +1,136 @@
+.container {
+  width: 70%;
+  background-image: url("../../assets/itadora_4.png");
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 10rem 6rem 2rem 6rem;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title h1 {
+  overflow: hidden;
+  border-right: 0.15em solid #fec83f;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 1.5s steps(20, end), blink-caret 0.75s step-end infinite,
+    hide-border 0.01s 1.5s forwards;
+  font-size: 4rem;
+}
+
+.title h2 {
+  font-size: 1.4rem;
+  color: #6b7381;
+  font-weight: 400;
+  overflow: hidden;
+  border-right: 0.15em solid #fec83f;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  width: 0;
+  visibility: hidden;
+  animation: typing 3.5s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite, appear 0.01s 3.5s forwards;
+  animation-delay: 1.5s;
+}
+
+.form {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.second_column {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.fullScreen {
+  width: 100%;
+}
+
+.arrowLeft {
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+}
+
+.arrowLeft img {
+  height: 1.2rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fec83f;
+  }
+}
+
+@keyframes appear {
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes hide-border {
+  to {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title h1 {
+    overflow: auto;
+    white-space: normal;
+    letter-spacing: 0.1em;
+    animation: none;
+    font-size: 3rem;
+    border: none;
+  }
+
+  .title h2 {
+    overflow: auto;
+    white-space: normal;
+    letter-spacing: 0.1em;
+    animation: none;
+    width: 100%;
+    visibility: visible;
+    border: none;
+  }
+}
