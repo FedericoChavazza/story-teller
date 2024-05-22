@@ -1,0 +1,23 @@
+.primary,
+.transparent {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  width: 24rem;
+}
+
+.transparent {
+  background-color: transparent;
+}
