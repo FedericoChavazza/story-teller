@@ -10,12 +10,6 @@
   font-family: "Libre Baskerville", serif;
 }
 
-.landButton {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .textContainer {
   display: flex;
   justify-content: center;
@@ -30,6 +24,16 @@
 .displayText {
   opacity: 1;
   transition: 1s all ease;
+}
+
+.arrowLeft {
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+}
+
+.arrowLeft img {
+  height: 1.2rem;
 }
 
 .mainTitle {
@@ -58,7 +62,7 @@
 }
 
 .story br + br {
-  margin-bottom: 20px; /* Ajusta el valor según el espaciado que desees */
+  margin-bottom: 20px;
   display: block;
   content: "";
 }

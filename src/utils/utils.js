@@ -1,9 +1,15 @@
-import adventure from "../assets/adventure.jpeg";
-import mistery from "../assets/mistery.jpeg";
-import thriller from "../assets/thriller.jpeg";
-import humor from "../assets/humor.jpeg";
-import history from "../assets/history.jpeg";
-import science_fiction from "../assets/science_fiction.webp";
+import adventure from "../assets/imagination_and_creativity.webp";
+import thriller from "../assets/facing_fears.webp";
+import friendship from "../assets/friendship.webp";
+import natureExploration from "../assets/nature_exploring.webp";
+import problemSolving from "../assets/problem_solving.webp";
+import learningAndDiscovery from "../assets/dream_aspiration.webp";
+import dreamAspiration from "../assets/learning_discovery.webp";
+import kindnessAndEmpathy from "../assets/kidness_empathy.webp";
+import familyBond from "../assets/family_bond.webp";
+import culturalCelebrity from "../assets/cultural_celebration.webp";
+import exercising from "../assets/exercising.webp";
+import music from "../assets/music.webp";
 
 export const dropdownData = [
   {
@@ -14,57 +20,57 @@ export const dropdownData = [
   {
     key: 2,
     value: "Friendship",
-    src: thriller,
+    src: friendship,
   },
   {
     key: 3,
     value: "Facing Fears",
-    src: mistery,
+    src: thriller,
   },
   {
     key: 4,
     value: "Nature Exploration",
-    src: humor,
+    src: natureExploration,
   },
   {
     key: 5,
     value: "Problem-solving",
-    src: history,
+    src: problemSolving,
   },
   {
     key: 6,
     value: "Dream and Aspiration",
-    src: science_fiction,
+    src: dreamAspiration,
   },
   {
     key: 7,
     value: "Learning and Discovery",
-    src: science_fiction,
+    src: learningAndDiscovery,
   },
   {
     key: 8,
     value: "Kidness and Empathy",
-    src: science_fiction,
+    src: kindnessAndEmpathy,
   },
   {
     key: 9,
     value: "Family Bonds",
-    src: science_fiction,
+    src: familyBond,
   },
   {
     key: 10,
     value: "Cultural Celebration",
-    src: science_fiction,
+    src: culturalCelebrity,
   },
   {
     key: 11,
     value: "Exercising",
-    src: science_fiction,
+    src: exercising,
   },
   {
     key: 12,
     value: "Music",
-    src: science_fiction,
+    src: music,
   },
 ];
 

@@ -4,6 +4,7 @@ import Button from "../../components/Button/Button";
 import { useStory } from "../../context/StoryContext/StoryContext";
 import styles from "./index.module.css";
 import DOMPurify from "dompurify";
+import arrowLeft from "../../assets/arrow-left.png";
 
 const StoryView = ({ handleGoBottom, storyLoading }) => {
   const {
@@ -26,11 +27,11 @@ const StoryView = ({ handleGoBottom, storyLoading }) => {
   return (
     <div className={styles.container}>
       <Button
-        customClass={styles.landButton}
+        customClass={styles.arrowLeft}
         onClick={handleClickButton}
         type="transparent"
       >
-        go back!
+        <img src={arrowLeft} alt="arrow-left" />
       </Button>
       <div className={`${styles.textContainer} ${displayText}`}>
         <h1 className={styles.mainTitle}>Once upon a time...</h1>
