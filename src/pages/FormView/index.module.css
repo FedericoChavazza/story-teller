@@ -1,6 +1,6 @@
 .container {
   width: 70%;
-  background-image: url("../../assets/itadora_4.png");
+  background-image: url("../../assets/background_image.png");
   background-size: contain;
   display: flex;
   align-items: center;
@@ -19,13 +19,14 @@
 
 .title h1 {
   overflow: hidden;
-  border-right: 0.15em solid #fec83f;
+  border-right: 0.15em solid #f6ca5b;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
   animation: typing 1.5s steps(20, end), blink-caret 0.75s step-end infinite,
     hide-border 0.01s 1.5s forwards;
   font-size: 4rem;
+  font-weight: 500;
 }
 
 .title h2 {
@@ -33,7 +34,7 @@
   color: #6b7381;
   font-weight: 400;
   overflow: hidden;
-  border-right: 0.15em solid #fec83f;
+  border-right: 0.15em solid #f6ca5b;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -89,7 +90,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: #fec83f;
+    border-color: #f6ca5b;
   }
 }
 

@@ -44,22 +44,22 @@
 .rocket::before {
   content: "";
   position: absolute;
-  bottom: -18rem;
+  bottom: -16.3rem;
   left: 50%;
   transform: translateX(-50%);
   width: 1rem;
   height: 20rem;
-  background: linear-gradient(#fec83f, transparent);
+  background: linear-gradient(#f6ca5b, transparent);
 }
 .rocket::after {
   content: "";
   position: absolute;
-  bottom: -18rem;
+  bottom: -16.3rem;
   left: 50%;
   transform: translateX(-50%);
   width: 1rem;
   height: 20rem;
-  background: linear-gradient(#fec83f, transparent);
+  background: linear-gradient(#f6ca5b, transparent);
   filter: blur(2rem);
 }
 

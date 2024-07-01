@@ -4,8 +4,9 @@
   align-items: center;
   overflow-y: auto !important;
   flex-direction: column;
+  height: 100%;
   padding: 10rem 6rem 2rem 6rem;
-  background-image: url("../../assets/itadora_4.png");
+  background-image: url("../../assets/background_image.png");
   background-size: contain;
   font-family: "Libre Baskerville", serif;
 }
