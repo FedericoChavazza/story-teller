@@ -5,7 +5,7 @@ const Stars = () => {
   const sceneRef = useRef(null);
 
   useEffect(() => {
-    const count = 100;
+    const count = 140;
     for (let i = 0; i < count; i++) {
       let star = document.createElement("i");
       let x = Math.floor(Math.random() * window.innerWidth);
