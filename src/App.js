@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useLayoutEffect } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import styles from "./index.module.css";
 import FormView from "./pages/FormView/FormView";
 import ImageView from "./pages/ImageView/ImageView";
@@ -6,8 +6,8 @@ import { dropdownData } from "./utils/utils";
 import Rocket from "./components/Decorations/Rocket/Rocket";
 import Stars from "./components/Decorations/Stars/Stars";
 import StoryView from "./pages/StoryView/StoryView";
-
 import { StoryProvider } from "./context/StoryContext/StoryContext";
+import useWindowPosition from "./hooks/useWindow/useWindowPosition";
 
 const App = () => {
   const [selectedGenre, setSelectedGenre] = useState(dropdownData[0]);
@@ -16,6 +16,8 @@ const App = () => {
   const rocketRef = useRef(null);
   const scrollAnimationRef = useRef(null);
   const bottomRef = useRef(null);
+
+  const windowPosition = useWindowPosition();
 
   const handleGenerateStory = () => {
     setStoryLoading(true);
@@ -72,6 +74,10 @@ const App = () => {
       }
     }
   }, [storyLoading]);
+
+  useEffect(() => {
+    handleGoBottom();
+  }, [windowPosition]);
 
   useLayoutEffect(() => {
     handleGoBottom();
