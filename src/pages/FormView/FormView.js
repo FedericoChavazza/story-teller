@@ -145,7 +145,7 @@ const detectErrors = (values) => {
     errors.kid_name = "Should not be blank or contain any numbers";
   }
 
-  if (!values.age || values.age <= 0 || values.age >= 100) {
+  if (!values.age || values.age < 1 || values.age > 99) {
     errors.age = "Cannot be younger than 0 or older than 100!";
   }
 
